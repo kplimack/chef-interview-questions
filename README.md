@@ -1,42 +1,11 @@
 # chef-interview-questions-cookbook
+This repo contains interview questions that can be fired up in a VagrantVM in order to evaluate how a candidate actually solves problems.
+## Ports
+Test-kitchen will setup a forwarded port, usually `http://localhost:8080`. We want to see Apache's "It Works!" page, but when we navigate there, we seem to get dmesg spew. Figure out what's going on and get the "It Works!" page to show up in the browser. This is a VM, so you can do whatever you want to it, install any tools, and manage services and processes without any concern. In order to login to this VM, run `kitchen login ports-debian-74`
 
-TODO: Enter the cookbook description here.
-
-## Supported Platforms
-
-TODO: List your supported platforms.
-
-## Attributes
-
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['chef-interview-questions']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
-
-## Usage
-
-### chef-interview-questions::default
-
-Include `chef-interview-questions` in your node's `run_list`:
-
-```json
-{
-  "run_list": [
-    "recipe[chef-interview-questions::default]"
-  ]
-}
-```
+## LAMP
+In this exercise, you will configure a LAMP stack! Okay, you're actually skipping MySQL... Unit tests are provided and you will make them pass.  In order to do that, you will use a provided Github repository, install prerequisites, and configure Apache2. In order to run the unit tests, run `kitchen verify lamp-debian-74`
 
 ## License and Authors
 
-Author:: ShowMobile, LLC (<jake.plimack@gmail.com>)
+Author:: Jake Plimack Photography, LLC (<jake.plimack@gmail.com>)
