@@ -1,3 +1,3 @@
-source "https://berkshelf.showmobile.com"
+source "https://supermarket.chef.io"
 
 metadata
